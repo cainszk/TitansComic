@@ -1,0 +1,20 @@
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\bin\Debug\TitansComic.exe.config
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\bin\Debug\TitansComic.exe
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\bin\Debug\TitansComic.pdb
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\obj\Debug\TitansComic.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\obj\Debug\TitansComic.Form1.resources
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\obj\Debug\TitansComic.Properties.Resources.resources
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\obj\Debug\TitansComic.csproj.GenerateResource.Cache
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\obj\Debug\TitansComic.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\obj\Debug\TitansComic.exe
+C:\Users\ASUS\AppData\Local\Temporary Projects\TitansComic\obj\Debug\TitansComic.pdb
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\bin\Debug\TitansComic.exe.config
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\bin\Debug\TitansComic.exe
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\bin\Debug\TitansComic.pdb
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\obj\Debug\TitansComic.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\obj\Debug\TitansComic.Form1.resources
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\obj\Debug\TitansComic.Properties.Resources.resources
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\obj\Debug\TitansComic.csproj.GenerateResource.Cache
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\obj\Debug\TitansComic.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\obj\Debug\TitansComic.exe
+C:\Users\ASUS\source\repos\TitansComic\TitansComic\obj\Debug\TitansComic.pdb
