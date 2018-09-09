@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net;
 
 namespace TitansComic
 {
@@ -17,36 +18,52 @@ namespace TitansComic
         {
             InitializeComponent();
         }
-        string picurl;
-        string epurl;
-        string epname;
-        int picnum;
-        int pgnum;
-        string lstx;
-        string x;
-        string y;
+        string picurl;//图片地址字符串
+        string epurl;//章节地址字符串
+        string epname;//章节名字字符串
+        int epnum;//章节号数值
+        int pgnum;//页码数值
+        string lstx;//分割后上一个章节名字字符串
+        string x;//分割后获得的章节名字字符串
+        string y;//分割后获得的页码字符串
+        string str4picnum;//图片号字符串
+        string str4pgnum;//页码字符串
+        string str4epnum;//页码字符串
+        void str4num()
+        {
+            str4epnum = epnum.ToString();
+            str4pgnum = (pgnum - 1).ToString();
+        }
         void lastpage()
         {
             if (pgnum > 1)
             {
-                picnum -= 1;
+                pgnum -= 1;
                 see();
             }
         }
         void nextpage()
         {
-            picnum += 1;
+            pgnum += 1;
             see();
         }
         void see()
         {
-            picurl = epurl + picnum.ToString();
+            str4num();
+            picurl = epurl + str4epnum+ str4pgnum;
             string url = string.Format(picurl + ".jpg");
-            System.Net.WebRequest webreq = System.Net.WebRequest.Create(url);
-            System.Net.WebResponse webres = webreq.GetResponse();
-            using (System.IO.Stream stream = webres.GetResponseStream())
+            try
             {
-                pictureBox1.Image = Image.FromStream(stream);
+                WebRequest webreq = WebRequest.Create(url);
+                WebResponse webres = webreq.GetResponse();
+                using (Stream stream = webres.GetResponseStream())
+                {
+                    pictureBox1.Image = Image.FromStream(stream);
+                }
+            }
+            catch
+            {
+                
             }
             switch (epurl)
             {
@@ -54,11 +71,9 @@ namespace TitansComic
                     switch (epname)
                     {
                         case "ep001":
-                            pgnum = picnum - 171233319;
                             lb4num.Text = "第1话，第" + pgnum.ToString() + "页";
                             break;
                         case "ep002":
-                            pgnum = picnum - 171234349;
                             lb4num.Text = "第2话，第" + pgnum.ToString() + "页";
                             break;
                     }
@@ -88,15 +103,16 @@ namespace TitansComic
                     case "ep001":
                         lstx = "第1话";
                         epurl = "http://p17.xiaoshidi.net/2013/03/";
-                        picnum = Int32.Parse(y) + 171233319;
+                        epnum= 17123332;
                         break;
                     case "ep002":
                         lstx = "第2话";
                         epurl = "http://p17.xiaoshidi.net/2013/03/";
-                        picnum = Int32.Parse(y) + 171234349;
+                        epnum = 17123435;
                         break;
                 }
                 lb4history.Text = "上次看到：" + lstx + "，第" + y + "页";
+                pgnum = Int32.Parse(y);
                 see();
 
             }
@@ -104,8 +120,8 @@ namespace TitansComic
         private void btn4001_Click(object sender, EventArgs e)
         {
             epname = "ep001";
-            picnum = 171233320;
-            pgnum = picnum - 171233319;
+            epnum = 17123332;
+            pgnum = 1;
             epurl = "http://p17.xiaoshidi.net/2013/03/";
             see();
         }
@@ -128,8 +144,8 @@ namespace TitansComic
         private void btn4002_Click(object sender, EventArgs e)
         {
             epname = "ep002";
-            picnum = 171234350;
-            pgnum = picnum - 171234349;
+            epnum = 17123435;
+            pgnum = 1;
             epurl = "http://p17.xiaoshidi.net/2013/03/";
             see();
         }

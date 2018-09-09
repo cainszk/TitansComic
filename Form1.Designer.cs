@@ -108,7 +108,7 @@
             this.btn4002.Location = new System.Drawing.Point(738, 48);
             this.btn4002.Name = "btn4002";
             this.btn4002.Size = new System.Drawing.Size(54, 33);
-            this.btn4002.TabIndex = 0;
+            this.btn4002.TabIndex = 1;
             this.btn4002.Text = "002";
             this.btn4002.Click += new System.EventHandler(this.btn4002_Click);
             // 
