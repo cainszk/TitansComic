@@ -215,5 +215,20 @@ namespace TitansComic
         {
             txt4pg.Text = "";
         }
+
+        private void btn4update_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/cainszk/TitansComic/releases");
+        }
+
+        private void btn4tur_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.cainszk.com/index.php/archives/5/");
+        }
+
+        private void btn4blog_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.cainszk.com");
+        }
     }
 }

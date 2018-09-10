@@ -42,6 +42,9 @@
             this.btn4gopg = new System.Windows.Forms.Button();
             this.txt4pg = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn4update = new System.Windows.Forms.Button();
+            this.btn4tur = new System.Windows.Forms.Button();
+            this.btn4blog = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +64,7 @@
             this.btn4lastpage.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn4lastpage.Location = new System.Drawing.Point(678, 812);
             this.btn4lastpage.Name = "btn4lastpage";
-            this.btn4lastpage.Size = new System.Drawing.Size(202, 106);
+            this.btn4lastpage.Size = new System.Drawing.Size(185, 106);
             this.btn4lastpage.TabIndex = 0;
             this.btn4lastpage.Text = "上一页";
             this.btn4lastpage.Click += new System.EventHandler(this.btn4lastpage_Click);
@@ -69,19 +72,19 @@
             // btn4nextpage
             // 
             this.btn4nextpage.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4nextpage.Location = new System.Drawing.Point(969, 812);
+            this.btn4nextpage.Location = new System.Drawing.Point(983, 812);
             this.btn4nextpage.Name = "btn4nextpage";
-            this.btn4nextpage.Size = new System.Drawing.Size(199, 106);
+            this.btn4nextpage.Size = new System.Drawing.Size(185, 106);
             this.btn4nextpage.TabIndex = 0;
             this.btn4nextpage.Text = "下一页";
             this.btn4nextpage.Click += new System.EventHandler(this.btn4nextpage_Click);
             // 
             // lb4num
             // 
-            this.lb4num.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lb4num.Location = new System.Drawing.Point(678, 764);
+            this.lb4num.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb4num.Location = new System.Drawing.Point(678, 726);
             this.lb4num.Name = "lb4num";
-            this.lb4num.Size = new System.Drawing.Size(490, 33);
+            this.lb4num.Size = new System.Drawing.Size(490, 53);
             this.lb4num.TabIndex = 3;
             this.lb4num.Text = "第1话，第1页";
             this.lb4num.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -100,7 +103,7 @@
             // 
             this.lb4history.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lb4history.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lb4history.Location = new System.Drawing.Point(678, 731);
+            this.lb4history.Location = new System.Drawing.Point(678, 693);
             this.lb4history.Name = "lb4history";
             this.lb4history.Size = new System.Drawing.Size(490, 33);
             this.lb4history.TabIndex = 5;
@@ -119,7 +122,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(678, 532);
+            this.pictureBox2.Location = new System.Drawing.Point(678, 494);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(490, 184);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -147,10 +150,10 @@
             // 
             // btn4gopg
             // 
-            this.btn4gopg.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4gopg.Location = new System.Drawing.Point(886, 857);
+            this.btn4gopg.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4gopg.Location = new System.Drawing.Point(869, 857);
             this.btn4gopg.Name = "btn4gopg";
-            this.btn4gopg.Size = new System.Drawing.Size(77, 61);
+            this.btn4gopg.Size = new System.Drawing.Size(108, 61);
             this.btn4gopg.TabIndex = 9;
             this.btn4gopg.Text = "Go";
             this.btn4gopg.Click += new System.EventHandler(this.btn4gopg_Click);
@@ -158,7 +161,7 @@
             // txt4pg
             // 
             this.txt4pg.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txt4pg.Location = new System.Drawing.Point(921, 812);
+            this.txt4pg.Location = new System.Drawing.Point(903, 812);
             this.txt4pg.Name = "txt4pg";
             this.txt4pg.Size = new System.Drawing.Size(42, 39);
             this.txt4pg.TabIndex = 10;
@@ -170,19 +173,51 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(898, 815);
+            this.label2.Location = new System.Drawing.Point(858, 815);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 33);
+            this.label2.Size = new System.Drawing.Size(134, 33);
             this.label2.TabIndex = 11;
-            this.label2.Text = "P";
+            this.label2.Text = "第       页";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btn4update
+            // 
+            this.btn4update.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4update.Location = new System.Drawing.Point(770, 455);
+            this.btn4update.Name = "btn4update";
+            this.btn4update.Size = new System.Drawing.Size(86, 33);
+            this.btn4update.TabIndex = 12;
+            this.btn4update.Text = "检查更新";
+            this.btn4update.Click += new System.EventHandler(this.btn4update_Click);
+            // 
+            // btn4tur
+            // 
+            this.btn4tur.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4tur.Location = new System.Drawing.Point(678, 455);
+            this.btn4tur.Name = "btn4tur";
+            this.btn4tur.Size = new System.Drawing.Size(86, 33);
+            this.btn4tur.TabIndex = 13;
+            this.btn4tur.Text = "开发教程";
+            this.btn4tur.Click += new System.EventHandler(this.btn4tur_Click);
+            // 
+            // btn4blog
+            // 
+            this.btn4blog.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4blog.Location = new System.Drawing.Point(1082, 455);
+            this.btn4blog.Name = "btn4blog";
+            this.btn4blog.Size = new System.Drawing.Size(86, 33);
+            this.btn4blog.TabIndex = 14;
+            this.btn4blog.Text = "个人主页";
+            this.btn4blog.Click += new System.EventHandler(this.btn4blog_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 930);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn4blog);
+            this.Controls.Add(this.btn4tur);
+            this.Controls.Add(this.btn4update);
             this.Controls.Add(this.txt4pg);
             this.Controls.Add(this.btn4gopg);
             this.Controls.Add(this.btn4003);
@@ -195,12 +230,14 @@
             this.Controls.Add(this.btn4lastpage);
             this.Controls.Add(this.btn4001);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TitansComic v0.1";
+            this.Text = "TitansComic v0.3";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
@@ -226,6 +263,9 @@
         private System.Windows.Forms.Button btn4gopg;
         private System.Windows.Forms.TextBox txt4pg;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn4update;
+        private System.Windows.Forms.Button btn4tur;
+        private System.Windows.Forms.Button btn4blog;
     }
 }
 
