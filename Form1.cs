@@ -124,11 +124,50 @@ namespace TitansComic
                         epurl = "http://p17.xiaoshidi.net/2013/03/";
                         epnum = 17123448;
                         break;
+                    case "ep004":
+                        lstx = "第4话";
+                        epurl = "http://p17.xiaoshidi.net/2013/03/";
+                        epnum = 17123500;
+                        break;
+                    case "ep005":
+                        lstx = "第5话";
+                        epurl = "http://p17.xiaoshidi.net/2013/03/";
+                        epnum = 17123514;
+                        break;
+                    case "ep006":
+                        lstx = "第6话";
+                        epurl = "http://p17.xiaoshidi.net/2013/03/";
+                        epnum = 17123527;
+                        break;
+                    case "ep007":
+                        lstx = "第7话";
+                        epurl = "http://p17.xiaoshidi.net/2013/03/";
+                        epnum = 17123539;
+                        break;
+                    case "ep008":
+                        lstx = "第8话";
+                        epurl = "http://p17.xiaoshidi.net/2013/03/";
+                        epnum = 17123552;
+                        break;
+                    case "ep009":
+                        lstx = "第9话";
+                        epurl = "http://p17.xiaoshidi.net/2013/03/";
+                        epnum = 17123514;
+                        break;
+                    case "ep010":
+                        lstx = "第10话";
+                        epurl = "http://p17.xiaoshidi.net/2013/03/";
+                        epnum = 17123514;
+                        break;
+                    case "ep011":
+                        lstx = "第11话";
+                        epurl = "http://p17.xiaoshidi.net/2013/03/";
+                        epnum = 17123514;
+                        break;
                 }
                 lb4history.Text = "上次看到：" + lstx + "，第" + y + "页";
                 pgnum = int.Parse(y);
                 see();
-
             }
         }
         private void btn4001_Click(object sender, EventArgs e)
@@ -175,7 +214,6 @@ namespace TitansComic
             }
 
         }
-
         private void btn4003_Click(object sender, EventArgs e)
         {
             epname = "ep003";
@@ -184,13 +222,11 @@ namespace TitansComic
             epurl = "http://p17.xiaoshidi.net/2013/03/";
             see();
         }
-
         private void btn4gopg_Click(object sender, EventArgs e)
         {
             pgnum= int.Parse(txt4pg.Text);
             see();
         }
-
         private void txt4pg_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))//如果不是输入数字就不让输入
@@ -198,7 +234,6 @@ namespace TitansComic
                  e.Handled = true;
             }
         }
-
         private void txt4pg_TextChanged(object sender, EventArgs e)
         {
             int iMax = 100;//首先设置上限值
@@ -210,25 +245,61 @@ namespace TitansComic
                  }
              }
         }
-
         private void txt4pg_Click(object sender, EventArgs e)
         {
             txt4pg.Text = "";
         }
-
         private void btn4update_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/cainszk/TitansComic/releases");
         }
-
         private void btn4tur_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.cainszk.com/index.php/archives/5/");
         }
-
         private void btn4blog_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.cainszk.com");
+        }
+        private void btn4004_Click(object sender, EventArgs e)
+        {
+            epname = "ep004";
+            epnum = 17123500;
+            pgnum = 1;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            see();
+        }
+        private void btn4005_Click(object sender, EventArgs e)
+        {
+            epname = "ep005";
+            epnum = 17123514;
+            pgnum = 1;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            see();
+        }
+        private void btn4006_Click(object sender, EventArgs e)
+        {
+            epname = "ep006";
+            epnum = 17123527;
+            pgnum = 1;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            see();
+        }
+        private void btn4007_Click(object sender, EventArgs e)
+        {
+            epname = "ep007";
+            epnum = 17123539;
+            pgnum = 1;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            see();
+        }
+        private void btn4008_Click(object sender, EventArgs e)
+        {
+            epname = "ep007";
+            epnum = 17123552;
+            pgnum = 1;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            see();
         }
     }
 }
