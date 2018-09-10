@@ -26,9 +26,8 @@ namespace TitansComic
         string lstx;//分割后上一个章节名字字符串
         string x;//分割后获得的章节名字字符串
         string y;//分割后获得的页码字符串
-        string str4picnum;//图片号字符串
         string str4pgnum;//页码字符串
-        string str4epnum;//页码字符串
+        string str4epnum;//章节号字符串
         void str4num()
         {
             str4epnum = epnum.ToString();
@@ -76,9 +75,19 @@ namespace TitansComic
                         case "ep002":
                             lb4num.Text = "第2话，第" + pgnum.ToString() + "页";
                             break;
+                        case "ep003":
+                            lb4num.Text = "第3话，第" + pgnum.ToString() + "页";
+                            break;
+                        case "ep004":
+                            lb4num.Text = "第4话，第" + pgnum.ToString() + "页";
+                            break;
+                        case "ep005":
+                            lb4num.Text = "第5话，第" + pgnum.ToString() + "页";
+                            break;
                     }
                     break;
             }
+            txt4pg.Text = pgnum.ToString();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -110,9 +119,14 @@ namespace TitansComic
                         epurl = "http://p17.xiaoshidi.net/2013/03/";
                         epnum = 17123435;
                         break;
+                    case "ep003":
+                        lstx = "第3话";
+                        epurl = "http://p17.xiaoshidi.net/2013/03/";
+                        epnum = 17123448;
+                        break;
                 }
                 lb4history.Text = "上次看到：" + lstx + "，第" + y + "页";
-                pgnum = Int32.Parse(y);
+                pgnum = int.Parse(y);
                 see();
 
             }
@@ -151,26 +165,55 @@ namespace TitansComic
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Up)
+            if (e.KeyCode == Keys.W| e.KeyCode == Keys.A)
             {
                 lastpage();
             }
-            if (e.KeyCode == Keys.Down)
+            if (e.KeyCode == Keys.S | e.KeyCode == Keys.D)
             {
                 nextpage();
             }
-            if (e.KeyCode == Keys.Left)
+
+        }
+
+        private void btn4003_Click(object sender, EventArgs e)
+        {
+            epname = "ep003";
+            epnum = 17123448;
+            pgnum = 1;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            see();
+        }
+
+        private void btn4gopg_Click(object sender, EventArgs e)
+        {
+            pgnum= int.Parse(txt4pg.Text);
+            see();
+        }
+
+        private void txt4pg_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))//如果不是输入数字就不让输入
             {
-                lastpage();
+                 e.Handled = true;
             }
-            if (e.KeyCode == Keys.Right)
-            {
-                nextpage();
-            }
-            if (e.KeyCode == Keys.Space)
-            {
-                nextpage();
-            }
+        }
+
+        private void txt4pg_TextChanged(object sender, EventArgs e)
+        {
+            int iMax = 100;//首先设置上限值
+             if (txt4pg.Text != null && txt4pg.Text != "")//判断TextBox的内容不为空，如果不判断会导致后面的非数字对比异常
+             {
+                 if (int.Parse(txt4pg.Text) > iMax)//num就是传进来的值,如果大于上限（输入的值），那就强制为上限-1，或者就是上限值？
+                 {
+                     txt4pg.Text = (iMax - 1).ToString();
+                 }
+             }
+        }
+
+        private void txt4pg_Click(object sender, EventArgs e)
+        {
+            txt4pg.Text = "";
         }
     }
 }
