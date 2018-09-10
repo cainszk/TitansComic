@@ -21,10 +21,10 @@ C:\Users\ASUS\source\repos\TitansComic\TitansComic\obj\Debug\TitansComic.pdb
 D:\GitHub\TitansComic\bin\Debug\TitansComic.exe.config
 D:\GitHub\TitansComic\bin\Debug\TitansComic.exe
 D:\GitHub\TitansComic\bin\Debug\TitansComic.pdb
-D:\GitHub\TitansComic\obj\Debug\TitansComic.csprojAssemblyReference.cache
 D:\GitHub\TitansComic\obj\Debug\TitansComic.Form1.resources
 D:\GitHub\TitansComic\obj\Debug\TitansComic.Properties.Resources.resources
 D:\GitHub\TitansComic\obj\Debug\TitansComic.csproj.GenerateResource.cache
 D:\GitHub\TitansComic\obj\Debug\TitansComic.csproj.CoreCompileInputs.cache
 D:\GitHub\TitansComic\obj\Debug\TitansComic.exe
 D:\GitHub\TitansComic\obj\Debug\TitansComic.pdb
+D:\GitHub\TitansComic\obj\Debug\TitansComic.csprojResolveAssemblyReference.cache
