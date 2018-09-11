@@ -27,4 +27,4 @@ D:\GitHub\TitansComic\obj\Debug\TitansComic.csproj.GenerateResource.cache
 D:\GitHub\TitansComic\obj\Debug\TitansComic.csproj.CoreCompileInputs.cache
 D:\GitHub\TitansComic\obj\Debug\TitansComic.exe
 D:\GitHub\TitansComic\obj\Debug\TitansComic.pdb
-D:\GitHub\TitansComic\obj\Debug\TitansComic.csprojResolveAssemblyReference.cache
+D:\GitHub\TitansComic\obj\Debug\TitansComic.csprojAssemblyReference.cache
