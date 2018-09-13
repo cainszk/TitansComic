@@ -43,7 +43,6 @@
             this.txt4pg = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn4update = new System.Windows.Forms.Button();
-            this.btn4tur = new System.Windows.Forms.Button();
             this.btn4blog = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn4031 = new System.Windows.Forms.Button();
@@ -109,9 +108,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btn4help = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn4bug = new System.Windows.Forms.Button();
+            this.btn4git = new System.Windows.Forms.Button();
+            this.btn4about = new System.Windows.Forms.Button();
+            this.btn4don = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -130,7 +130,7 @@
             // btn4lastpage
             // 
             this.btn4lastpage.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4lastpage.Location = new System.Drawing.Point(517, 563);
+            this.btn4lastpage.Location = new System.Drawing.Point(517, 558);
             this.btn4lastpage.Name = "btn4lastpage";
             this.btn4lastpage.Size = new System.Drawing.Size(185, 119);
             this.btn4lastpage.TabIndex = 0;
@@ -140,7 +140,7 @@
             // btn4nextpage
             // 
             this.btn4nextpage.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4nextpage.Location = new System.Drawing.Point(838, 562);
+            this.btn4nextpage.Location = new System.Drawing.Point(838, 557);
             this.btn4nextpage.Name = "btn4nextpage";
             this.btn4nextpage.Size = new System.Drawing.Size(185, 120);
             this.btn4nextpage.TabIndex = 0;
@@ -224,7 +224,7 @@
             // btn4gopg
             // 
             this.btn4gopg.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4gopg.Location = new System.Drawing.Point(708, 643);
+            this.btn4gopg.Location = new System.Drawing.Point(708, 638);
             this.btn4gopg.Name = "btn4gopg";
             this.btn4gopg.Size = new System.Drawing.Size(124, 39);
             this.btn4gopg.TabIndex = 9;
@@ -234,7 +234,7 @@
             // txt4pg
             // 
             this.txt4pg.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txt4pg.Location = new System.Drawing.Point(749, 598);
+            this.txt4pg.Location = new System.Drawing.Point(749, 593);
             this.txt4pg.Name = "txt4pg";
             this.txt4pg.Size = new System.Drawing.Size(42, 39);
             this.txt4pg.TabIndex = 10;
@@ -247,7 +247,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(704, 601);
+            this.label2.Location = new System.Drawing.Point(704, 596);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 33);
             this.label2.TabIndex = 11;
@@ -257,31 +257,21 @@
             // btn4update
             // 
             this.btn4update.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4update.Location = new System.Drawing.Point(517, 92);
+            this.btn4update.Location = new System.Drawing.Point(517, 131);
             this.btn4update.Name = "btn4update";
             this.btn4update.Size = new System.Drawing.Size(86, 33);
             this.btn4update.TabIndex = 12;
             this.btn4update.Text = "检查更新";
             this.btn4update.Click += new System.EventHandler(this.btn4update_Click);
             // 
-            // btn4tur
-            // 
-            this.btn4tur.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4tur.Location = new System.Drawing.Point(517, 131);
-            this.btn4tur.Name = "btn4tur";
-            this.btn4tur.Size = new System.Drawing.Size(86, 33);
-            this.btn4tur.TabIndex = 13;
-            this.btn4tur.Text = "开发教程";
-            this.btn4tur.Click += new System.EventHandler(this.btn4tur_Click);
-            // 
             // btn4blog
             // 
             this.btn4blog.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4blog.Location = new System.Drawing.Point(517, 170);
+            this.btn4blog.Location = new System.Drawing.Point(937, 53);
             this.btn4blog.Name = "btn4blog";
             this.btn4blog.Size = new System.Drawing.Size(86, 33);
             this.btn4blog.TabIndex = 14;
-            this.btn4blog.Text = "个人主页";
+            this.btn4blog.Text = "博客";
             this.btn4blog.Click += new System.EventHandler(this.btn4blog_Click);
             // 
             // panel1
@@ -948,7 +938,7 @@
             // btn4dl
             // 
             this.btn4dl.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4dl.Location = new System.Drawing.Point(937, 170);
+            this.btn4dl.Location = new System.Drawing.Point(517, 92);
             this.btn4dl.Name = "btn4dl";
             this.btn4dl.Size = new System.Drawing.Size(86, 33);
             this.btn4dl.TabIndex = 17;
@@ -958,7 +948,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(710, 563);
+            this.label4.Location = new System.Drawing.Point(710, 558);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 33);
             this.label4.TabIndex = 18;
@@ -984,46 +974,63 @@
             this.btn4help.Size = new System.Drawing.Size(86, 33);
             this.btn4help.TabIndex = 23;
             this.btn4help.Text = "使用帮助";
+            this.btn4help.Click += new System.EventHandler(this.btn4help_Click);
             // 
-            // button1
+            // btn4bug
             // 
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(937, 131);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 33);
-            this.button1.TabIndex = 24;
+            this.btn4bug.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4bug.Location = new System.Drawing.Point(517, 170);
+            this.btn4bug.Name = "btn4bug";
+            this.btn4bug.Size = new System.Drawing.Size(86, 33);
+            this.btn4bug.TabIndex = 24;
+            this.btn4bug.Text = "问题反馈";
+            this.btn4bug.Click += new System.EventHandler(this.btn4bug_Click);
             // 
-            // button2
+            // btn4git
             // 
-            this.button2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(937, 92);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 33);
-            this.button2.TabIndex = 25;
+            this.btn4git.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4git.Location = new System.Drawing.Point(937, 92);
+            this.btn4git.Name = "btn4git";
+            this.btn4git.Size = new System.Drawing.Size(86, 33);
+            this.btn4git.TabIndex = 25;
+            this.btn4git.Text = "Github";
+            this.btn4git.Click += new System.EventHandler(this.btn4git_Click);
             // 
-            // button3
+            // btn4about
             // 
-            this.button3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(937, 53);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 33);
-            this.button3.TabIndex = 26;
+            this.btn4about.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4about.Location = new System.Drawing.Point(937, 131);
+            this.btn4about.Name = "btn4about";
+            this.btn4about.Size = new System.Drawing.Size(86, 33);
+            this.btn4about.TabIndex = 26;
+            this.btn4about.Text = "关于";
+            this.btn4about.Click += new System.EventHandler(this.btn4about_Click);
+            // 
+            // btn4don
+            // 
+            this.btn4don.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4don.Location = new System.Drawing.Point(937, 170);
+            this.btn4don.Name = "btn4don";
+            this.btn4don.Size = new System.Drawing.Size(86, 33);
+            this.btn4don.TabIndex = 13;
+            this.btn4don.Text = "捐赠";
+            this.btn4don.Click += new System.EventHandler(this.btn4don_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 721);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn4about);
+            this.Controls.Add(this.btn4git);
+            this.Controls.Add(this.btn4bug);
             this.Controls.Add(this.btn4help);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn4dl);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn4blog);
-            this.Controls.Add(this.btn4tur);
+            this.Controls.Add(this.btn4don);
             this.Controls.Add(this.btn4update);
             this.Controls.Add(this.txt4pg);
             this.Controls.Add(this.btn4gopg);
@@ -1070,7 +1077,6 @@
         private System.Windows.Forms.TextBox txt4pg;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn4update;
-        private System.Windows.Forms.Button btn4tur;
         private System.Windows.Forms.Button btn4blog;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lb4tt;
@@ -1136,9 +1142,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn4help;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn4bug;
+        private System.Windows.Forms.Button btn4git;
+        private System.Windows.Forms.Button btn4about;
+        private System.Windows.Forms.Button btn4don;
     }
 }
 

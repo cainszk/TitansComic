@@ -68,7 +68,7 @@ namespace TitansComic
             }
             catch
             {
-                MessageBox.Show("该错误存在以下可能性：\r\n1. 图片无法获取，请检测您的网络连接。\r\n2. 漫画已经观看到最后一页，请选择下一话。", "错误");
+                MessageBox.Show("该错误存在以下可能性：\r\n1. 图片无法获取，请检测您的网络连接。\r\n2. 漫画已经观看到最后一页，请选择下一话。", "错误！");
             }
 
            switch (epname)
@@ -408,6 +408,11 @@ namespace TitansComic
             pgnum = 1;
             see();
         }
+        Form4bug f4bug;
+        Form4update f4upt;
+        Form4don f4don;
+        Form4help f4hp;
+        Form4about f4abt;
         public void DownloadImage(string durl, string path)
         {
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create(durl);
@@ -823,14 +828,6 @@ namespace TitansComic
         private void txt4pg_Click(object sender, EventArgs e)
         {
             txt4pg.Text = "";
-        }
-        private void btn4update_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/cainszk/TitansComic/releases");
-        }
-        private void btn4tur_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.cainszk.com/index.php/archives/5/");
         }
         private void btn4blog_Click(object sender, EventArgs e)
         {
@@ -1288,7 +1285,72 @@ namespace TitansComic
             }
             catch
             {
-                MessageBox.Show("该错误存在以下可能性：\r\n1. 图片无法下载，请检测您的网络连接。\r\n2. 保存目录没有写入权限，请将本程序放在非系统盘再运行。", "错误");
+                MessageBox.Show("该错误存在以下可能性：\r\n1. 图片无法下载，请检测您的网络连接。\r\n2. 保存目录没有写入权限，请将本程序放在非系统盘再运行。", "错误！");
+            }
+        }
+        private void btn4help_Click(object sender, EventArgs e)
+        {
+            if (f4hp == null || f4hp.IsDisposed)
+            {
+                f4hp = new Form4help();
+                f4hp.Show();
+            }
+            else
+            {
+                f4hp.Activate();
+            }
+        }
+        private void btn4don_Click(object sender, EventArgs e)
+        {
+            if (f4don == null || f4don.IsDisposed)
+            {
+                f4don = new Form4don();
+                f4don.Show();
+            }
+            else
+            {
+                f4don.Activate();
+            }
+        }
+        private void btn4about_Click(object sender, EventArgs e)
+        {
+            if (f4abt == null || f4abt.IsDisposed)
+            {
+                f4abt = new Form4about();
+                f4abt.Show();
+            }
+            else
+            {
+                f4abt.Activate();
+            }
+        }
+        private void btn4git_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/cainszk/TitansComic");
+        }
+        private void btn4update_Click(object sender, EventArgs e)
+        {
+            if (f4upt == null || f4upt.IsDisposed)
+            {
+                f4upt = new Form4update();
+                f4upt.Show();
+            }
+            else
+            {
+                f4upt.Activate();
+            }
+        }
+
+        private void btn4bug_Click(object sender, EventArgs e)
+        {
+            if (f4bug == null || f4bug.IsDisposed)
+            {
+                f4bug = new Form4bug();
+                f4bug.Show();
+            }
+            else
+            {
+                f4bug.Activate();
             }
         }
     }
