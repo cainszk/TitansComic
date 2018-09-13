@@ -103,6 +103,7 @@
             this.Name = "Form4bug";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "问题反馈 for TitansComic";
+            this.Load += new System.EventHandler(this.Form4bug_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 

@@ -66,6 +66,8 @@ namespace TitansComic
         
         private void Form4update_Load(object sender, EventArgs e)
         {
+            Form1 f1 = new Form1();
+            this.Icon = f1.Icon;
             FileStream verfsrd = File.OpenRead(@"version.ini");
             StreamReader versr = new StreamReader(verfsrd, System.Text.Encoding.Default);
             verstrrd = versr.ReadToEnd();

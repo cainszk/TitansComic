@@ -24,5 +24,11 @@ namespace TitansComic
         {
             System.Diagnostics.Process.Start("mailto:shenzhoukai@aliyun.com");
         }
+
+        private void Form4bug_Load(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            this.Icon = f1.Icon;
+        }
     }
 }
