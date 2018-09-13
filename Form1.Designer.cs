@@ -230,6 +230,7 @@
             this.txt4pg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt4pg.Click += new System.EventHandler(this.txt4pg_Click);
             this.txt4pg.TextChanged += new System.EventHandler(this.txt4pg_TextChanged);
+            this.txt4pg.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt4pg_KeyDown);
             this.txt4pg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt4pg_KeyPress);
             // 
             // label2
@@ -928,7 +929,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(231, 33);
             this.label3.TabIndex = 16;
-            this.label3.Text = "TitansComic v0.4";
+            this.label3.Text = "TitansComic v0.41";
             // 
             // Form1
             // 
@@ -956,7 +957,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TitansComic v0.4";
+            this.Text = "TitansComic v0.41";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

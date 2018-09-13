@@ -739,7 +739,6 @@ namespace TitansComic
                 see();
             }
         }
-
         private void btn4lastpage_Click(object sender, EventArgs e)
         {
             lastpage();
@@ -1031,45 +1030,10 @@ namespace TitansComic
             epurl = "http://p17.xiaoshidi.net/2013/03/";
             seeinit();
         }
-        private void btn4wz1_Click(object sender, EventArgs e)
+        private void btn4033_Click(object sender, EventArgs e)
         {
-            epname = "wz01";
-            epnum = 30134321;
-            epurl = "http://p17.xiaoshidi.net/2013/11/";
-            seeinit();
-        }
-        private void btn4039_Click(object sender, EventArgs e)
-        {
-            epname = "ep039";
-            epnum = 17124239;
-            epurl = "http://p17.xiaoshidi.net/2013/03/";
-            seeinit();
-        }
-        private void btn4038_Click(object sender, EventArgs e)
-        {
-            epname = "ep038";
-            epnum = 17124227;
-            epurl = "http://p17.xiaoshidi.net/2013/03/";
-            seeinit();
-        }
-        private void btn4037_Click(object sender, EventArgs e)
-        {
-            epname = "ep037";
-            epnum = 17124215;
-            epurl = "http://p17.xiaoshidi.net/2013/03/";
-            seeinit();
-        }
-        private void btn4036_Click(object sender, EventArgs e)
-        {
-            epname = "ep036";
-            epnum = 17124202;
-            epurl = "http://p17.xiaoshidi.net/2013/03/";
-            seeinit();
-        }
-        private void btn4035_Click(object sender, EventArgs e)
-        {
-            epname = "ep035";
-            epnum = 17124147;
+            epname = "ep033";
+            epnum = 17124119;
             epurl = "http://p17.xiaoshidi.net/2013/03/";
             seeinit();
         }
@@ -1080,10 +1044,45 @@ namespace TitansComic
             epurl = "http://p17.xiaoshidi.net/2013/03/";
             seeinit();
         }
-        private void btn4033_Click(object sender, EventArgs e)
+        private void btn4035_Click(object sender, EventArgs e)
         {
-            epname = "ep033";
-            epnum = 17124119;
+            epname = "ep035";
+            epnum = 17124147;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            seeinit();
+        }
+        private void btn4036_Click(object sender, EventArgs e)
+        {
+            epname = "ep036";
+            epnum = 17124202;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            seeinit();
+        }
+        private void btn4037_Click(object sender, EventArgs e)
+        {
+            epname = "ep037";
+            epnum = 17124215;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            seeinit();
+        }
+        private void btn4038_Click(object sender, EventArgs e)
+        {
+            epname = "ep038";
+            epnum = 17124227;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            seeinit();
+        }
+        private void btn4039_Click(object sender, EventArgs e)
+        {
+            epname = "ep039";
+            epnum = 17124239;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            seeinit();
+        }
+        private void btn4040_Click(object sender, EventArgs e)
+        {
+            epname = "ep040";
+            epnum = 17124254;
             epurl = "http://p17.xiaoshidi.net/2013/03/";
             seeinit();
         }
@@ -1108,20 +1107,6 @@ namespace TitansComic
             epurl = "http://p17.xiaoshidi.net/2013/03/";
             seeinit();
         }
-        private void btn4tb1_Click(object sender, EventArgs e)
-        {
-            epname = "tb01";
-            epnum = 17124346;
-            epurl = "http://p17.xiaoshidi.net/2013/03/";
-            seeinit();
-        }
-        private void btn4tb2_Click(object sender, EventArgs e)
-        {
-            epname = "tb02";
-            epnum = 17124359;
-            epurl = "http://p17.xiaoshidi.net/2013/03/";
-            seeinit();
-        }
         private void btn4044_Click(object sender, EventArgs e)
         {
             epname = "ep044";
@@ -1143,25 +1128,11 @@ namespace TitansComic
             epurl = "http://p17.xiaoshidi.net/2013/06/";
             seeinit();
         }
-        private void btn4sg_Click(object sender, EventArgs e)
+        private void btn4047_Click(object sender, EventArgs e)
         {
-            epname = "sg";
-            epnum = 17211652;
-            epurl = "http://p17.xiaoshidi.net/2013/06/";
-            seeinit();
-        }
-        private void btn4049_Click(object sender, EventArgs e)
-        {
-            epname = "ep049";
-            epnum = 06083445;
-            epurl = "http://p17.xiaoshidi.net/2013/09/";
-            seeinit();
-        }
-        private void btn4qz0_Click(object sender, EventArgs e)
-        {
-            epname = "qz0";
-            epnum = 02233922;
-            epurl = "http://p17.xiaoshidi.net/2013/09/";
+            epname = "ep047";
+            epnum = 07125307;
+            epurl = "http://p17.xiaoshidi.net/2013/07/";
             seeinit();
         }
         private void btn4048_Click(object sender, EventArgs e)
@@ -1171,25 +1142,11 @@ namespace TitansComic
             epurl = "http://p17.xiaoshidi.net/2013/08/";
             seeinit();
         }
-        private void btn4047_Click(object sender, EventArgs e)
+        private void btn4049_Click(object sender, EventArgs e)
         {
-            epname = "ep047";
-            epnum = 07125307;
-            epurl = "http://p17.xiaoshidi.net/2013/07/";
-            seeinit();
-        }
-        private void btn4040_Click(object sender, EventArgs e)
-        {
-            epname = "ep040";
-            epnum = 17124254;
-            epurl = "http://p17.xiaoshidi.net/2013/03/";
-            seeinit();
-        }
-        private void btn4051_Click(object sender, EventArgs e)
-        {
-            epname = "ep051";
-            epnum = 08000023;
-            epurl = "http://p17.xiaoshidi.net/2013/11/";
+            epname = "ep049";
+            epnum = 06083445;
+            epurl = "http://p17.xiaoshidi.net/2013/09/";
             seeinit();
         }
         private void btn4050_Click(object sender, EventArgs e)
@@ -1199,24 +1156,17 @@ namespace TitansComic
             epurl = "http://p17.xiaoshidi.net/2013/10/";
             seeinit();
         }
-        private void btn4wz0_Click(object sender, EventArgs e)
+        private void btn4051_Click(object sender, EventArgs e)
         {
-            epname = "wz0";
-            epnum = 29140411;
-            epurl = "http://p17.xiaoshidi.net/2013/09/";
+            epname = "ep051";
+            epnum = 08000023;
+            epurl = "http://p17.xiaoshidi.net/2013/11/";
             seeinit();
         }
         private void btn4052_Click(object sender, EventArgs e)
         {
             epname = "ep052";
             epnum = 06133739;
-            epurl = "http://p17.xiaoshidi.net/2013/12/";
-            seeinit();
-        }
-        private void btn4wz2_Click(object sender, EventArgs e)
-        {
-            epname = "wz02";
-            epnum = 28120751;
             epurl = "http://p17.xiaoshidi.net/2013/12/";
             seeinit();
         }
@@ -1227,12 +1177,76 @@ namespace TitansComic
             epurl = "http://p17.xiaoshidi.net/2014/01/";
             seeinit();
         }
+        private void btn4tb1_Click(object sender, EventArgs e)
+        {
+            epname = "tb01";
+            epnum = 17124346;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            seeinit();
+        }
+        private void btn4tb2_Click(object sender, EventArgs e)
+        {
+            epname = "tb02";
+            epnum = 17124359;
+            epurl = "http://p17.xiaoshidi.net/2013/03/";
+            seeinit();
+        }
+        private void btn4sg_Click(object sender, EventArgs e)
+        {
+            epname = "sg";
+            epnum = 17211652;
+            epurl = "http://p17.xiaoshidi.net/2013/06/";
+            seeinit();
+        }
+        private void btn4qz0_Click(object sender, EventArgs e)
+        {
+            epname = "qz0";
+            epnum = 02233922;
+            epurl = "http://p17.xiaoshidi.net/2013/09/";
+            seeinit();
+        }
+        private void btn4wz0_Click(object sender, EventArgs e)
+        {
+            epname = "wz0";
+            epnum = 29140411;
+            epurl = "http://p17.xiaoshidi.net/2013/09/";
+            seeinit();
+        }
+        private void btn4wz1_Click(object sender, EventArgs e)
+        {
+            epname = "wz01";
+            epnum = 30134321;
+            epurl = "http://p17.xiaoshidi.net/2013/11/";
+            seeinit();
+        }
+        private void btn4wz2_Click(object sender, EventArgs e)
+        {
+            epname = "wz02";
+            epnum = 28120751;
+            epurl = "http://p17.xiaoshidi.net/2013/12/";
+            seeinit();
+        }
         private void btn4wz3_Click(object sender, EventArgs e)
         {
             epname = "wz03";
             epnum = 01173759;
             epurl = "http://p17.xiaoshidi.net/2014/02/";
             seeinit();
+        }
+        private void txt4pg_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (txt4pg.Text != "")
+                {
+                    pgnum = int.Parse(txt4pg.Text);
+                    see();
+                }
+                else
+                {
+                    see();
+                }
+            }
         }
     }
 }
