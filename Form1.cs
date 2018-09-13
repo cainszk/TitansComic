@@ -18,6 +18,7 @@ namespace TitansComic
         {
             InitializeComponent();
         }
+        string url;//总图片jpg地址字符串
         string picurl;//图片地址字符串
         string epurl;//章节地址字符串
         string epname;//章节名字字符串
@@ -55,7 +56,7 @@ namespace TitansComic
         {
             str4num();
             picurl = epurl + str4epnum+ str4pgnum;
-            string url = string.Format(picurl + ".jpg");
+            url = string.Format(picurl + ".jpg");
             try
             {
                 WebRequest webreq = WebRequest.Create(url);
@@ -67,7 +68,7 @@ namespace TitansComic
             }
             catch
             {
-                
+                MessageBox.Show("该错误存在以下可能性：\r\n1. 图片无法获取，请检测您的网络连接。\r\n2. 漫画已经观看到最后一页，请选择下一话。", "错误");
             }
 
            switch (epname)
@@ -407,8 +408,37 @@ namespace TitansComic
             pgnum = 1;
             see();
         }
+        public void DownloadImage(string durl, string path)
+        {
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(durl);
+            req.ServicePoint.Expect100Continue = false;
+            req.Method = "GET";
+            req.KeepAlive = true;
+            req.ContentType = "image/*";
+            HttpWebResponse rsp = (HttpWebResponse)req.GetResponse();
+            System.IO.Stream stream = null;
+            try
+            {
+                // 以字符流的方式读取HTTP响应
+                stream = rsp.GetResponseStream();
+                Image.FromStream(stream).Save(path);
+            }
+            finally
+            {
+                // 释放资源
+                if (stream != null) stream.Close();
+                if (rsp != null) rsp.Close();
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
+            FileStream verfsrd = File.OpenRead(@"version.ini");
+            StreamReader versr = new StreamReader(verfsrd, System.Text.Encoding.Default);
+            string verstrrd = versr.ReadToEnd();
+            versr.Close();
+            verfsrd.Close();
+            this.Text = this.Text + verstrrd;
+            lb4tt.Text= lb4tt.Text + verstrrd;
             if (File.Exists(@"book.mark"))
             {
                 FileStream fsrd = File.OpenRead(@"book.mark");
@@ -1246,6 +1276,19 @@ namespace TitansComic
                 {
                     see();
                 }
+            }
+        }
+        private void btn4dl_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DownloadImage(url, Application.StartupPath+"/Download/"+lb4num.Text+".jpg");
+                Form4download f4dl = new Form4download();
+                f4dl.Show();
+            }
+            catch
+            {
+                MessageBox.Show("该错误存在以下可能性：\r\n1. 图片无法下载，请检测您的网络连接。\r\n2. 保存目录没有写入权限，请将本程序放在非系统盘再运行。", "错误");
             }
         }
     }

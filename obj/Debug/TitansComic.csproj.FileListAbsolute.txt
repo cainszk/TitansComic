@@ -28,3 +28,4 @@ D:\GitHub\TitansComic\obj\Debug\TitansComic.csproj.CoreCompileInputs.cache
 D:\GitHub\TitansComic\obj\Debug\TitansComic.exe
 D:\GitHub\TitansComic\obj\Debug\TitansComic.pdb
 D:\GitHub\TitansComic\obj\Debug\TitansComic.csprojAssemblyReference.cache
+D:\GitHub\TitansComic\obj\Debug\TitansComic.Form4download.resources

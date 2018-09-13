@@ -104,7 +104,11 @@
             this.btn4014 = new System.Windows.Forms.Button();
             this.btn4015 = new System.Windows.Forms.Button();
             this.btn4008 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lb4tt = new System.Windows.Forms.Label();
+            this.btn4dl = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btn4help = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -123,27 +127,29 @@
             // btn4lastpage
             // 
             this.btn4lastpage.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4lastpage.Location = new System.Drawing.Point(517, 603);
+            this.btn4lastpage.Location = new System.Drawing.Point(517, 563);
             this.btn4lastpage.Name = "btn4lastpage";
-            this.btn4lastpage.Size = new System.Drawing.Size(185, 106);
+            this.btn4lastpage.Size = new System.Drawing.Size(185, 119);
             this.btn4lastpage.TabIndex = 0;
-            this.btn4lastpage.Text = "上一页";
+            this.btn4lastpage.Text = "< 上一页";
             this.btn4lastpage.Click += new System.EventHandler(this.btn4lastpage_Click);
             // 
             // btn4nextpage
             // 
             this.btn4nextpage.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4nextpage.Location = new System.Drawing.Point(838, 603);
+            this.btn4nextpage.Location = new System.Drawing.Point(838, 562);
             this.btn4nextpage.Name = "btn4nextpage";
-            this.btn4nextpage.Size = new System.Drawing.Size(185, 106);
+            this.btn4nextpage.Size = new System.Drawing.Size(185, 120);
             this.btn4nextpage.TabIndex = 0;
-            this.btn4nextpage.Text = "下一页";
+            this.btn4nextpage.Text = "下一页 >";
             this.btn4nextpage.Click += new System.EventHandler(this.btn4nextpage_Click);
             // 
             // lb4num
             // 
-            this.lb4num.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lb4num.Location = new System.Drawing.Point(517, 540);
+            this.lb4num.BackColor = System.Drawing.Color.Black;
+            this.lb4num.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb4num.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lb4num.Location = new System.Drawing.Point(517, 502);
             this.lb4num.Name = "lb4num";
             this.lb4num.Size = new System.Drawing.Size(506, 45);
             this.lb4num.TabIndex = 3;
@@ -152,8 +158,10 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(517, 248);
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(517, 214);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(506, 40);
             this.label1.TabIndex = 4;
@@ -164,7 +172,7 @@
             // 
             this.lb4history.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lb4history.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lb4history.Location = new System.Drawing.Point(517, 507);
+            this.lb4history.Location = new System.Drawing.Point(517, 469);
             this.lb4history.Name = "lb4history";
             this.lb4history.Size = new System.Drawing.Size(506, 33);
             this.lb4history.TabIndex = 5;
@@ -183,9 +191,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(517, 67);
+            this.pictureBox2.Location = new System.Drawing.Point(609, 53);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(506, 166);
+            this.pictureBox2.Size = new System.Drawing.Size(322, 150);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -212,10 +220,10 @@
             // 
             // btn4gopg
             // 
-            this.btn4gopg.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4gopg.Location = new System.Drawing.Point(708, 648);
+            this.btn4gopg.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4gopg.Location = new System.Drawing.Point(708, 643);
             this.btn4gopg.Name = "btn4gopg";
-            this.btn4gopg.Size = new System.Drawing.Size(124, 61);
+            this.btn4gopg.Size = new System.Drawing.Size(124, 39);
             this.btn4gopg.TabIndex = 9;
             this.btn4gopg.Text = "Go";
             this.btn4gopg.Click += new System.EventHandler(this.btn4gopg_Click);
@@ -223,7 +231,7 @@
             // txt4pg
             // 
             this.txt4pg.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txt4pg.Location = new System.Drawing.Point(749, 603);
+            this.txt4pg.Location = new System.Drawing.Point(749, 598);
             this.txt4pg.Name = "txt4pg";
             this.txt4pg.Size = new System.Drawing.Size(42, 39);
             this.txt4pg.TabIndex = 10;
@@ -236,7 +244,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(704, 606);
+            this.label2.Location = new System.Drawing.Point(704, 601);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 33);
             this.label2.TabIndex = 11;
@@ -246,7 +254,7 @@
             // btn4update
             // 
             this.btn4update.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4update.Location = new System.Drawing.Point(845, 12);
+            this.btn4update.Location = new System.Drawing.Point(517, 92);
             this.btn4update.Name = "btn4update";
             this.btn4update.Size = new System.Drawing.Size(86, 33);
             this.btn4update.TabIndex = 12;
@@ -256,7 +264,7 @@
             // btn4tur
             // 
             this.btn4tur.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4tur.Location = new System.Drawing.Point(753, 12);
+            this.btn4tur.Location = new System.Drawing.Point(517, 131);
             this.btn4tur.Name = "btn4tur";
             this.btn4tur.Size = new System.Drawing.Size(86, 33);
             this.btn4tur.TabIndex = 13;
@@ -266,7 +274,7 @@
             // btn4blog
             // 
             this.btn4blog.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn4blog.Location = new System.Drawing.Point(937, 12);
+            this.btn4blog.Location = new System.Drawing.Point(517, 170);
             this.btn4blog.Name = "btn4blog";
             this.btn4blog.Size = new System.Drawing.Size(86, 33);
             this.btn4blog.TabIndex = 14;
@@ -337,7 +345,7 @@
             this.panel1.Controls.Add(this.btn4001);
             this.panel1.Controls.Add(this.btn4002);
             this.panel1.Controls.Add(this.btn4003);
-            this.panel1.Location = new System.Drawing.Point(517, 296);
+            this.panel1.Location = new System.Drawing.Point(517, 262);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(506, 195);
             this.panel1.TabIndex = 15;
@@ -922,20 +930,67 @@
             this.btn4008.Text = "008";
             this.btn4008.Click += new System.EventHandler(this.btn4008_Click);
             // 
-            // label3
+            // lb4tt
             // 
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(516, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(231, 33);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "TitansComic v0.41";
+            this.lb4tt.BackColor = System.Drawing.Color.Black;
+            this.lb4tt.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lb4tt.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lb4tt.Location = new System.Drawing.Point(517, 12);
+            this.lb4tt.Name = "lb4tt";
+            this.lb4tt.Size = new System.Drawing.Size(506, 33);
+            this.lb4tt.TabIndex = 16;
+            this.lb4tt.Text = "TitansComic v";
+            this.lb4tt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btn4dl
+            // 
+            this.btn4dl.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4dl.Location = new System.Drawing.Point(937, 170);
+            this.btn4dl.Name = "btn4dl";
+            this.btn4dl.Size = new System.Drawing.Size(86, 33);
+            this.btn4dl.TabIndex = 17;
+            this.btn4dl.Text = "本页下载";
+            this.btn4dl.Click += new System.EventHandler(this.btn4dl_Click);
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(710, 563);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 33);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "直接翻到";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.ForeColor = System.Drawing.Color.Maroon;
+            this.label5.Location = new System.Drawing.Point(517, 687);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(506, 21);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Copyright © 2018 TitansComic.";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btn4help
+            // 
+            this.btn4help.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn4help.Location = new System.Drawing.Point(517, 53);
+            this.btn4help.Name = "btn4help";
+            this.btn4help.Size = new System.Drawing.Size(86, 33);
+            this.btn4help.TabIndex = 23;
+            this.btn4help.Text = "使用帮助";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 721);
+            this.Controls.Add(this.btn4help);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btn4dl);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn4blog);
             this.Controls.Add(this.btn4tur);
@@ -950,14 +1005,14 @@
             this.Controls.Add(this.btn4lastpage);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lb4tt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TitansComic v0.41";
+            this.Text = "TitansComic v";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
@@ -988,7 +1043,7 @@
         private System.Windows.Forms.Button btn4tur;
         private System.Windows.Forms.Button btn4blog;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lb4tt;
         private System.Windows.Forms.Button btn4016;
         private System.Windows.Forms.Button btn4017;
         private System.Windows.Forms.Button btn4018;
@@ -1047,6 +1102,10 @@
         private System.Windows.Forms.Button btn4047;
         private System.Windows.Forms.Button btn4sg;
         private System.Windows.Forms.Button btn4053;
+        private System.Windows.Forms.Button btn4dl;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn4help;
     }
 }
 
