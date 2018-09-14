@@ -10609,7 +10609,7 @@
 </value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>        这是一款开源的免费的《进击的巨人》漫画阅读程序。它基于C#的.Net框架开发，是服务于Windows系统的Winform应用程序。支持x86/x64架构的Win7/8/10系使用。它的源代码托管于Github上，用户可从Github页面下载程序最新版的编译结果、查看公开透明的源代码、建立分支二次开发以及提交issue反馈bug。
+    <value>        这是一款开源的免费的《进击的巨人》漫画阅读程序。它基于C#的.Net框架开发，是服务于Windows系统的Winform应用程序。支持x86/x64架构的Win7/8/10系统使用。它的源代码托管于Github上，用户可从Github页面下载程序最新版的编译结果、查看公开透明的源代码、建立分支二次开发以及提交issue反馈bug。
         同时欢迎为Github项目打星以及为开发者捐赠。
         非常感谢您的使用，祝您追漫愉快。</value>
   </data>
