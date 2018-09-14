@@ -28,9 +28,10 @@ D:\GitHub\TitansComic\obj\Debug\TitansComic.csproj.CoreCompileInputs.cache
 D:\GitHub\TitansComic\obj\Debug\TitansComic.exe
 D:\GitHub\TitansComic\obj\Debug\TitansComic.pdb
 D:\GitHub\TitansComic\obj\Debug\TitansComic.Form4download.resources
-D:\GitHub\TitansComic\obj\Debug\TitansComic.csprojResolveAssemblyReference.cache
 D:\GitHub\TitansComic\obj\Debug\TitansComic.Form4help.resources
 D:\GitHub\TitansComic\obj\Debug\TitansComic.Form4don.resources
 D:\GitHub\TitansComic\obj\Debug\TitansComic.Form4about.resources
 D:\GitHub\TitansComic\obj\Debug\TitansComic.Form4bug.resources
 D:\GitHub\TitansComic\obj\Debug\TitansComic.Form4update.resources
+D:\GitHub\TitansComic\obj\Debug\TitansComic.csprojAssemblyReference.cache
+D:\GitHub\TitansComic\obj\Debug\TitansComic.Form4wel.resources

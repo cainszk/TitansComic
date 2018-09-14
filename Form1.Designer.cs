@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lb4history = new System.Windows.Forms.Label();
             this.btn4002 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pic4logo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn4003 = new System.Windows.Forms.Button();
             this.btn4gopg = new System.Windows.Forms.Button();
@@ -112,7 +112,7 @@
             this.btn4git = new System.Windows.Forms.Button();
             this.btn4about = new System.Windows.Forms.Button();
             this.btn4don = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -191,15 +191,16 @@
             this.btn4002.Text = "002";
             this.btn4002.Click += new System.EventHandler(this.btn4002_Click);
             // 
-            // pictureBox2
+            // pic4logo
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(609, 53);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(322, 150);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.pic4logo.Image = ((System.Drawing.Image)(resources.GetObject("pic4logo.Image")));
+            this.pic4logo.Location = new System.Drawing.Point(609, 53);
+            this.pic4logo.Name = "pic4logo";
+            this.pic4logo.Size = new System.Drawing.Size(322, 150);
+            this.pic4logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic4logo.TabIndex = 7;
+            this.pic4logo.TabStop = false;
+            this.pic4logo.Click += new System.EventHandler(this.pic4logo_Click);
             // 
             // pictureBox1
             // 
@@ -1034,7 +1035,7 @@
             this.Controls.Add(this.btn4update);
             this.Controls.Add(this.txt4pg);
             this.Controls.Add(this.btn4gopg);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pic4logo);
             this.Controls.Add(this.lb4history);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lb4num);
@@ -1050,10 +1051,11 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TitansComic v";
+            this.Activated += new System.EventHandler(this.Form1_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1071,7 +1073,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lb4history;
         private System.Windows.Forms.Button btn4002;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pic4logo;
         private System.Windows.Forms.Button btn4003;
         private System.Windows.Forms.Button btn4gopg;
         private System.Windows.Forms.TextBox txt4pg;

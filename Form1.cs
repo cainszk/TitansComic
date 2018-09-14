@@ -413,6 +413,8 @@ namespace TitansComic
         Form4don f4don;
         Form4help f4hp;
         Form4about f4abt;
+        Form4wel f4wel;
+
         public void DownloadImage(string durl, string path)
         {
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create(durl);
@@ -437,6 +439,8 @@ namespace TitansComic
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            f4wel = new Form4wel();
+            f4wel.ShowDialog();
             FileStream verfsrd = File.OpenRead(@"version.ini");
             StreamReader versr = new StreamReader(verfsrd, System.Text.Encoding.Default);
             string verstrrd = versr.ReadToEnd();
@@ -1352,6 +1356,14 @@ namespace TitansComic
             {
                 f4bug.Activate();
             }
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+        }
+
+        private void pic4logo_Click(object sender, EventArgs e)
+        {
         }
     }
 }
